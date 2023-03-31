@@ -6,14 +6,14 @@ a = int(a)
 x = int(x)
 list = []
 checking = []
-while (a <= x): # Sử Dụng Vòng Lặp While Lặp lại và check xem numbers có chia hết ko
+while a <= x:
     a = a + 1
-    testnumbers = x/a
-    if testnumbers%a == 0:
-        list.append(testnumbers)
-    elif testnumbers != 0:
-        checking.append(testnumbers)
+    numbers = a
+    if x%numbers == 0:
+        list.append(numbers) 
+    elif x%numbers != 0:
+        checking.append(numbers) # Cái checking tui thêm vào để check chương trình chạy. 
 print("All divisors of the number you have given: ")
 print(str(list))
-print("checking: " + str(checking))
+
 
